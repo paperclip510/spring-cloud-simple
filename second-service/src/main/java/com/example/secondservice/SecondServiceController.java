@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 import lombok.extern.slf4j.Slf4j;
 
 @RestController
-@RequestMapping("/second-service")
+@RequestMapping("/second-service") 
 @Slf4j
 public class SecondServiceController {
 	@GetMapping("/welcome")
@@ -20,6 +20,6 @@ public class SecondServiceController {
 	public String message(@RequestHeader("second-request") String header) {
 		log.info(header);
 
-		return "Welcome to the Second Service.";
+		return "Welcome to the Second Service Message.";
 	}
 }

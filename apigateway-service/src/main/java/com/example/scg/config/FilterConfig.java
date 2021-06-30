@@ -5,12 +5,12 @@ import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration
+//@Configuration
 public class FilterConfig {
 
-	@Bean
+//	@Bean
 	public RouteLocator gatewayRoutes(RouteLocatorBuilder builder) {
-		
+		//application.yml 에서 설정한 내용을 필터로 변경.
 		return builder.routes()
 				.route(r -> r.path("/first-service/**")
 						.filters(f-> f.addRequestHeader("first-request", "first-request-header")

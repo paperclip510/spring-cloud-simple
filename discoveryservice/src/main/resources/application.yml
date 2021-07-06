@@ -7,5 +7,5 @@ spring:
     
 eureka:
   client:
-    register-with-eureka: false #자기 자긴을 등록하지 않음.
+    register-with-eureka: false #자기 자신을 등록하지 않음.
     fetch-registry: false
